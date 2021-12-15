@@ -1,0 +1,9 @@
+<nav>
+  <ul >
+    <li *ngFor="let route of routes;let i=index">
+      <button class="btn btn-primary" (click)="onClickRoute(route)">{{route}}</button>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

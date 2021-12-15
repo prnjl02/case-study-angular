@@ -1,0 +1,26 @@
+
+:host {
+        height: 600px;
+        display: block;
+        background-color: yellow;
+        overflow-y: auto;
+        border: 2px solid black;
+    margin-top: 5%;
+      }
+    
+button{
+    width: 50%;
+    height: 34%;
+    margin: 35%;
+    padding: 5%;
+  }
+
+
+div{
+    width:200px;
+    height:200px;
+    margin:7px;
+    border:1px solid black;
+    display:inline-flex;
+    overflow-y: auto;
+  }

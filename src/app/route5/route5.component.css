@@ -1,0 +1,13 @@
+img{
+    width: 20px;
+    height: 20px;
+}
+th{
+    cursor: pointer;
+}
+table{
+    border: 2px solid black;
+    margin-left: 14%;
+    MARGIN-TOP: 5%;
+    width: 70%;
+}

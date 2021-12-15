@@ -1,0 +1,18 @@
+<div class="parentContainer">
+    <div class="firstContiner"> 
+        <app-sibling1 [timeLimitFromParent]="timeLimitToChild" [isStarted]="isStartedToChild" [isPaused]="isPausedToChild"
+        (updatedCounterValue)="getUpdatedCounterValue($event)"></app-sibling1>
+    <app-sibling2 style="margin-left: 5%;" (timeLimitToParent)="getTimeLimit($event)" (isStarted)="getIsStarted($event)"
+        (isPaused)="getIsPaused($event)" [showPausedAt]="updatedCounterValueToChild"
+        (isPausedCount)="getIsPauseCount($event)" (isStartedCount)="getIsStartCount($event)"
+        (isPausedTimeStamp)="getIsPausedTimeStamp($event)" (isStartedTimeStamp)="getIsStartedTimeStamp($event)">
+    </app-sibling2>
+    </div>
+   
+
+    <div class="secondConatainer">
+        <app-sibling3 [isStartedTimeStampFromParent]="isStartedTimeStamp" [isPausedTimeStampFromParent]="isPausedTimeStamp">
+        </app-sibling3>
+        <app-sibling4 style="margin-left: 35%;"[isStartCounter]="isStartCountToChild" [isPausedCounter]="isPauseCountToChild"></app-sibling4>
+    </div>
+</div>

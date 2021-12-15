@@ -1,0 +1,14 @@
+.parentContainer{
+    margin-top:10%;
+    border: 2px solid black;
+    width: 40%;
+    margin-left: 30%;
+}
+.firstContiner{
+    display: flex;
+    margin:5%
+}
+.secondConatainer{
+    display: flex;
+    margin-left: 10%;
+}

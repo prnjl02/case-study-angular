@@ -1,0 +1,30 @@
+.navClass{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2%;
+}
+.products{
+  margin-top:5%
+}
+.cardsClass{
+  width: 18rem;
+  margin-top:5%
+}
+.layoutIcons{
+  display:flex;
+  margin-right:1%;
+  background-color: #EABE46;
+  height: 27px;
+  cursor: pointer;
+}
+
+select{
+  cursor: pointer;
+  height: 27px;
+  margin-right: 1%;
+}
+.rightBorder{
+  border-right:1px solid black;
+  height: 26px;
+  margin:0 2%
+}

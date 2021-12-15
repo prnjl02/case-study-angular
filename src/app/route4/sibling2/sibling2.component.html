@@ -1,0 +1,11 @@
+<section class="siblingTwoClass">
+    <div class="inputFiled">
+        <label for="timeLimit">Enter Time Limit</label>
+        <input type="number" [(ngModel)]="timeLimit" min="0">
+    </div>
+   
+    <button class="btn btn-primary" (click)="start()" [disabled]="timeLimit==0 || timeLimit == null">Start/Pause</button>
+    <button class="btn btn-primary" (click)="reset()" [disabled]="timeLimit==0 || timeLimit == null">Reset</button>
+
+    <p>Paused at : {{showPausedAt}}</p>
+</section>

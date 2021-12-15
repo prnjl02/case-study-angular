@@ -1,0 +1,29 @@
+
+<nav class="navClass">
+    <div class="layoutIcons">
+        <p (click)="showGridView()" ><img src="https://img.icons8.com/ios/24/000000/activity-grid-2.png" /></p>
+        <p class="rightBorder"></p>
+        <p (click)="showListView()"><img src="https://img.icons8.com/material-outlined/24/000000/list.png"/></p>
+    </div>
+
+<select name="priceFilter" id="priceFilter"(change)="filterProducts($event)">
+    <option value="ascending" >Low to High</option>
+    <option value="descending" >High to Low</option>
+</select>
+</nav>
+
+<div class="container products" >
+    <div class="row">
+      <div [ngClass]="{'col-md-3 col-sm-3 col-lg-3 col-xs-3 panel panel-default':isGridView,'col-md-6 col-sm-6 col-lg-6 col-xs-6 panel panel-default':isListView} " *ngFor="let data of data">
+        <div class="card cardsClass">
+            <div class="card-body">
+              <p class="card-text">Product Name : {{data.productName}}</p>
+              <p>Price : ₹{{data.price}}</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+ 

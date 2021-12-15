@@ -1,0 +1,21 @@
+.siblingTwoClass{
+    border: 2px solid black;
+    height: 180px;
+    width: 300px;
+}
+
+button{
+    margin:7%
+}
+input{
+    width: 40%;
+    margin-left: 2%;
+}
+.inputFiled{
+    margin:5%
+}
+
+p{
+    padding:3%;
+    margin-left: 25%;
+}
